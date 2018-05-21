@@ -6,8 +6,8 @@ var pike = {
     openHr: 6,
     closeHr: 20,
     averageCookies: 6.3,
-    getRandom: function(min, max) {
-        return Math.random() * (max - min) + min;
+    getRandom: function(minHrlCust, maxHrlCust) {
+        return Math.random() * (maxHrlCust - minHrlCust) + minHrlCust;
     }
 }
 
@@ -17,8 +17,8 @@ var airport = {
     openHr: 6,
     closeHr: 20,
     averageCookies: 1.2,
-    getRandom: function(min, max) {
-        return Math.random() * (max - min) + min;
+    getRandom: function(minHrlCust, maxHrlCust) {
+        return Math.random() * (maxHrlCust - minHrlCust) + minHrlCust;
     }
 }
 
@@ -28,8 +28,8 @@ var center = {
     openHr: 6,
     closeHr: 20,
     averageCookies: 3.7,
-    getRandom: function(min, max) {
-        return Math.random() * (max - min) + min;
+    getRandom: function(minHrlCust, maxHrlCust) {
+        return Math.random() * (maxHrlCust - minHrlCust) + minHrlCust;
     }
 }
 
@@ -39,8 +39,8 @@ var capital = {
     openHr: 6,
     closeHr: 20,
     averageCookies: 2.3,
-    getRandom: function(min, max) {
-        return Math.random() * (max - min) + min;
+    getRandom: function(minHrlCust, maxHrlCust) {
+        return Math.random() * (maxHrlCust - minHrlCust) + minHrlCust;
     }
 }
 
@@ -50,7 +50,8 @@ var alki = {
     openHr: 6,
     closeHr: 20,
     averageCookies: 4.6,
-    getRandom: function(min, max) {
-        return Math.random() * (max - min) + min;
+    getRandom: function(minHrlCust, maxHrlCust) {
+        return Math.random() * (maxHrlCust - minHrlCust) + minHrlCust;
     }
 }
+

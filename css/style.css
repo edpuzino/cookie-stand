@@ -6,20 +6,17 @@
     box-sizing: border-box;
 }
 
-h1 {
+h1, p {
     text-align: center;
 }
 
-p {
-    text-align:center;
+div {
+    margin: 40px;
+    float: left;
+    width: 180px;
 }
 
 html, body {
     height: 100%;
 }
 
-div {
-    margin-left: 40px;
-    float: left;
-    width: 200px;
-}

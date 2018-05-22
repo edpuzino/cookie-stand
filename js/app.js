@@ -7,7 +7,7 @@ var pike = {
     closeHr: 20,
     averageCookies: 6.3,
     getRandom: function(minHrlCust, maxHrlCust) {
-        return Math.random() * (maxHrlCust - minHrlCust) + minHrlCust;
+        return Math.random() * (maxHrlCustmaxHrlCust - minHrlCust) + minHrlCust;
     }
 }
 

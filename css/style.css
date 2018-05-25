@@ -1,13 +1,48 @@
 * {
     font-family: gill-sans, sans-serif;
+    background-color: rgb(214, 244, 255);
     width: 100%;
     margin: 7px;
     padding: 0;
     box-sizing: border-box;
 }
+/*  color1: rgb(195, 204, 100);
+    color2: rgb(142, 153, 29);
+    color3: rgb(255, 237, 150);
+    color4: rgb(214, 244, 255);
+    color5: rgb(100, 153, 204); */ 
 
 h1, p {
     text-align: center;
+    color: rgb(100, 153, 204);
+}
+
+table {
+    width: 800px;
+
+}
+
+thead{
+
+}
+
+th {
+    background-color: rgb(142, 153, 29);
+    width:50;
+
+}
+
+tr {
+ 
+}
+
+td {
+    color: rgb(255, 237, 150);
+
+}
+
+tfoot {
+    color: rgb(142, 153, 29);
 }
 
 div {

@@ -12,37 +12,43 @@
     color4: rgb(214, 244, 255);
     color5: rgb(100, 153, 204); */ 
 
-h1, p {
+h1 {
+    text-align: center;
+    color: rgb(100, 153, 204);
+}
+
+p {
     text-align: center;
     color: rgb(100, 153, 204);
 }
 
 table {
-    width: 800px;
-
+    width: 1100px;
+    border-width: thick;
+    border-style: outset;
+    margin: 100px auto 40px auto;
 }
 
-thead{
+tr:first-child, tr:last-child {
+    width: 150px;
+}
 
+td {
+    background-color: rgb(255, 237, 150);
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    border-style: solid;
+    text-align: right;
+    padding: 5px;
 }
 
 th {
     background-color: rgb(142, 153, 29);
-    width:50;
-
-}
-
-tr {
- 
-}
-
-td {
-    color: rgb(255, 237, 150);
-
-}
-
-tfoot {
-    color: rgb(142, 153, 29);
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    border-style: solid;
 }
 
 div {

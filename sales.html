@@ -11,6 +11,28 @@
             <h1 id='heading'>Pat's Salmon Cookies Sales Projections</h1>
             <p class='content'>These are the Daily Sales Projections for tomorrow</p>
                 <table id='table'></table>
+                
+                <form id='login' action'/login' method='post'>
+                    <fieldset>
+                        <legend>Add New Store Information</legend>
+
+                        <label for = 'storename'>New Location Name</label>
+                        <input name = 'storename' type = 'text'/>
+
+                        <label for = 'mincust'>Minimum Customers Per Hour</label>
+                        <input name = 'mincust' type = 'text'/>
+                        <br>
+
+                        <label for = 'maxcust'>Maximum Customers Per Hour</label>
+                        <input name = 'maxcust' type = 'text'/>
+
+                        <label for = 'avgcookies'>Average Cookies Per Customer</label>
+                        <input name = 'avgcookies' type = 'text'/>
+
+                        <button id = 'submit' type = 'submit'>Add New Store</button>
+
+                    </fieldset>
+                </form>
                    
             <script type='text/javascript' src='js/app.js'></script>
         </body>

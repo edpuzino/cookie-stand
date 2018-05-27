@@ -23,10 +23,10 @@ p {
 }
 
 table {
-    width: 1100px;
+    width: 900px;
     border-width: thick;
     border-style: outset;
-    margin: 100px auto 40px auto;
+    margin: 50px auto 20px auto;
 }
 
 tr:first-child, tr:last-child {
@@ -35,7 +35,7 @@ tr:first-child, tr:last-child {
 
 td {
     background-color: rgb(255, 237, 150);
-    width: 50px;
+    width: 40px;
     height: 50px;
     font-weight: bold;
     border-style: solid;
@@ -45,10 +45,37 @@ td {
 
 th {
     background-color: rgb(142, 153, 29);
-    width: 50px;
+    width: 40px;
     height: 50px;
     font-weight: bold;
     border-style: solid;
+}
+
+
+input {
+    width: 150px;
+}
+
+fieldset {
+    margin: 10px auto 10px auto;
+    width: 830px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+button {
+    float: right;
+    width: 120px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+legend {
+    width: 200px;
+    border: 2px solid;
+    border-radius: 7px;
 }
 
 div {

@@ -32,7 +32,6 @@ function MakeStores(name, minHrlCust, maxHrlCust, averageCookies) {
 
 };
 
-
 //This function sends each stores parameters to the constructor function.
 function makeStores() {
     new MakeStores('First and Pike', 23, 65, 6.3);
@@ -42,7 +41,6 @@ function makeStores() {
     new MakeStores('Alki', 2, 16, 4.6);
 }
 makeStores();
-
 
 //This function makes the table header row.
 function makeHeaderRow() {
@@ -55,7 +53,6 @@ function makeHeaderRow() {
         thEl = document.createElement('th');
         thEl.textContent = hours[k];
         trEl.appendChild(thEl);
-        console.log(hours[k]);
     };
     thEl = document.createElement('th');
     thEl.textContent = 'Daily Store Totals';
@@ -86,4 +83,31 @@ function makeBodyRows() {
 };
 makeBodyRows();
 
-
+function handleStore(event) {
+    event.preventDefault();
+    var storename = document.getElementById('storename');
+    var mincust = document.getElementById('mincust');
+    var maxcust = document.getElementById('maxcust');
+    var avgcookies = document.getElementById('avgcookies');
+    if(!event.target.storename.value || !event.target.mincust.value || !event.target.maxcust.value || !event.target.avgcookies.value) {
+        return alert('Fields cannot be empty');
+    };
+    new MakeStores(storename, mincust, maxcust,avgcookies);
+    var t = stores.length - 1;
+    var table = document.getElementById('table');
+    var trEl = document.createElement('tr');
+    var thEl = document.createElement('th');
+    thEl.textContent = stores[t].name;
+    trEl.appendChild(thEl);
+    for(var n = 0; n < hours.length; n++) {
+        var tdEl = document.createElement('td');
+        tdEl.textContent = stores[t].hrlCookies[n];
+        trEl.appendChild(tdEl);
+    };
+    thEl = document.createElement('th');
+    thEl.textContent = stores[t].totalCookies;
+    trEl.appendChild(thEl);
+    table.appendChild(trEl);
+};
+var newstore = document.getElementById('submit');
+newstore.addEventListener('click', handleStore);

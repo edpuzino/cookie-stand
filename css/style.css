@@ -1,10 +1,10 @@
 * {
     font-family: gill-sans, sans-serif;
-    background-color: rgb(214, 244, 255);
     width: 100%;
     margin: 7px;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(69, 194, 240);
 }
 /*  color1: rgb(195, 204, 100);
     color2: rgb(142, 153, 29);
@@ -14,19 +14,26 @@
 
 h1 {
     text-align: center;
-    color: rgb(100, 153, 204);
+
 }
 
 p {
     text-align: center;
-    color: rgb(100, 153, 204);
+    color: rgb(83, 0, 13);
+    font-weight: bold;
+}
+
+img {
+    float: center;
+    width: 400;
 }
 
 table {
     width: 900px;
     border-width: thick;
     border-style: outset;
-    margin: 50px auto 20px auto;
+    margin: 30px auto 20px auto;
+    z-index: 5;
 }
 
 tr:first-child, tr:last-child {
@@ -61,6 +68,7 @@ fieldset {
     width: 830px;
     border: 2px solid;
     border-radius: 10px;
+    z-index: 5;
 }
 
 button {
@@ -84,7 +92,4 @@ div {
     width: 180px;
 }
 
-html, body {
-    height: 100%;
-}
 

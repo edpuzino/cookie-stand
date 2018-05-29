@@ -84,7 +84,8 @@ function makeBodyRows() {
 makeBodyRows();
 
 function handleStore(event) {
-    event.preventDefault();
+    event.preventDefault();/*
+    if(!event.target.storename.value || !event.target.mincust.value || !event.target.maxcust.value || !event.target.avgcookies) {return "Fields cannot be empty";} else {*/
     var storename = document.getElementById('storename').value;
     var mincust = Number(document.getElementById('mincust').value);
     var maxcust = Number(document.getElementById('maxcust').value);
@@ -105,6 +106,11 @@ function handleStore(event) {
     thEl.textContent = stores[t].totalCookies;
     trEl.appendChild(thEl);
     table.appendChild(trEl);
+    document.getElementById('storename').value = '';
+    document.getElementById('mincust').value = '';
+    document.getElementById('maxcust').value = '';
+    document.getElementById('avgcookies').value = '';
+/*    };*/
 };
 var newstore = document.getElementById('submit');
 newstore.addEventListener('click', handleStore);

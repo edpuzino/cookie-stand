@@ -1,0 +1,15 @@
+* {
+    background-image: url('../img/slate7.jpg');
+}
+
+h1 {
+    text-align: center;
+    z-index: 5;
+}
+
+p {
+    text-align: center;
+    color: rgb(83, 0, 13);
+    font-weight: bold;
+    z-index: 5;
+}

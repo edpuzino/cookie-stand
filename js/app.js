@@ -85,11 +85,12 @@ makeBodyRows();
 
 function handleStore(event) {
     event.preventDefault();/*
-    if(!event.target.storename.value || !event.target.mincust.value || !event.target.maxcust.value || !event.target.avgcookies) {return "Fields cannot be empty";} else {*/
+    if(!event.login.storename.value || !event.login.mincust.value || !event.login.maxcust.value || !event.login.avgcookies) {return "Fields cannot be empty";
+    } else {*/
     var storename = document.getElementById('storename').value;
     var mincust = Number(document.getElementById('mincust').value);
     var maxcust = Number(document.getElementById('maxcust').value);
-    var avgcookies = Number(document.getElementById('avgcookies').value);
+    var avgcookies = Number(document.getElementById('avgcookies').value);    
     new MakeStores(storename, mincust, maxcust, avgcookies);
     var t = stores.length - 1;
     var table = document.getElementById('table');

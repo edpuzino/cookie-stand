@@ -27,7 +27,6 @@ table {
     border-width: thick;
     border-style: outset;
     margin: 30px auto 20px auto;
-    z-index: 5;
 }
 
 th:first-child, th:last-child {
@@ -63,7 +62,6 @@ fieldset {
     width: 830px;
     border: 2px solid;
     border-radius: 10px;
-    z-index: 5;
 }
 
 button {

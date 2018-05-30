@@ -83,6 +83,33 @@ function makeBodyRows() {
 };
 makeBodyRows();
 
+//This function makes the footer row that has the hourly totals for all stores and the grand total for the day.
+function makeFooterRow() {
+    var table = document.getElementById('table');
+    var trEl = document.createElement('tr');
+    var thEl = document.createElement('th');
+    var totalTotals = 0;
+    thEl.textContent = 'Hourly Totals';
+    trEl.appendChild(thEl);
+    for(var p = 0; p < hours.length; p++) {
+        var hourlyTotals = 0;
+        for(var q = 0; q < stores.length; q++) {
+            hourlyTotals = hourlyTotals + stores[q].hrlCookies[p];
+        };
+        thEl = document.createElement('th');
+        thEl.textContent = hourlyTotals;
+        trEl.appendChild(thEl);
+    };
+    for(var r = 0; r < stores.length; r++) {
+        totalTotals = totalTotals + stores[r].totalCookies;
+    };
+    thEl = document.createElement('th');
+    thEl.textContent = totalTotals;
+    trEl.appendChild(thEl);
+    table.appendChild(trEl);
+};
+makeFooterRow();
+
 function handleStore(event) {
     event.preventDefault();/*
     if(!event.login.storename.value || !event.login.mincust.value || !event.login.maxcust.value || !event.login.avgcookies) {return "Fields cannot be empty";
@@ -94,6 +121,7 @@ function handleStore(event) {
     new MakeStores(storename, mincust, maxcust, avgcookies);
     var t = stores.length - 1;
     var table = document.getElementById('table');
+    document.getElementById('table').deleteRow(stores.length);
     var trEl = document.createElement('tr');
     var thEl = document.createElement('th');
     thEl.textContent = stores[t].name;
@@ -111,6 +139,7 @@ function handleStore(event) {
     document.getElementById('mincust').value = '';
     document.getElementById('maxcust').value = '';
     document.getElementById('avgcookies').value = '';
+    makeFooterRow();
 /*    };*/
 };
 var newstore = document.getElementById('submit');

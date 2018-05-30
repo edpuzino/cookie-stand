@@ -111,13 +111,14 @@ function makeFooterRow() {
 makeFooterRow();
 
 function handleStore(event) {
-    event.preventDefault();/*
-    if(!event.login.storename.value || !event.login.mincust.value || !event.login.maxcust.value || !event.login.avgcookies) {return "Fields cannot be empty";
-    } else {*/
+    event.preventDefault();
     var storename = document.getElementById('storename').value;
     var mincust = Number(document.getElementById('mincust').value);
     var maxcust = Number(document.getElementById('maxcust').value);
-    var avgcookies = Number(document.getElementById('avgcookies').value);    
+    var avgcookies = Number(document.getElementById('avgcookies').value); 
+    if(storename || !mincust || !maxcust || !avgcookies) {
+    return alert("Fields cannot be empty");
+    } else {
     new MakeStores(storename, mincust, maxcust, avgcookies);
     var t = stores.length - 1;
     var table = document.getElementById('table');
@@ -140,7 +141,7 @@ function handleStore(event) {
     document.getElementById('maxcust').value = '';
     document.getElementById('avgcookies').value = '';
     makeFooterRow();
-/*    };*/
+    };
 };
 var newstore = document.getElementById('submit');
 newstore.addEventListener('click', handleStore);

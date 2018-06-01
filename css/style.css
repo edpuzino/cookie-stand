@@ -18,8 +18,8 @@ p {
 }
 
 img {
-    float: center;
     width: 400;
+    margin: 0px auto 10px auto;
 }
 
 table {

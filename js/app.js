@@ -116,7 +116,7 @@ function handleStore(event) {
     var mincust = Number(document.getElementById('mincust').value);
     var maxcust = Number(document.getElementById('maxcust').value);
     var avgcookies = Number(document.getElementById('avgcookies').value); 
-    if(storename || !mincust || !maxcust || !avgcookies) {
+    if(!storename || !mincust || !maxcust || !avgcookies) {
     return alert("Fields cannot be empty");
     } else {
     new MakeStores(storename, mincust, maxcust, avgcookies);

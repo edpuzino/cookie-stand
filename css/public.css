@@ -2,6 +2,10 @@
     background-color: rgb(69, 194, 240);
 }
 
+h1 img {
+    width: 400;
+}
+
 h1 {
     margin: 20px auto;
     text-align: center;
@@ -14,3 +18,15 @@ p {
     font-weight: bold;
     z-index: 5;
 }
+
+h4 {
+    float: left;
+    margin:12px 20px 12px 20px;
+}
+
+footer {
+    clear: both;
+    background: rgb(21, 130, 170);
+    height: 150px;
+}
+

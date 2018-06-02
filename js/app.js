@@ -37,7 +37,7 @@ function makeStores() {
     new MakeStores('First and Pike', 23, 65, 6.3);
     new MakeStores('SeaTac Airport', 3, 24, 1.2);
     new MakeStores('Seattle Center', 11, 38, 3.7);
-    new MakeStores('Capital Hill', 20, 38, 2.3);
+    new MakeStores('Capitol Hill', 20, 38, 2.3);
     new MakeStores('Alki', 2, 16, 4.6);
 }
 makeStores();
